@@ -57,6 +57,9 @@ public class Order {
     public void setProducts(List<Product> products) {
         this.products = products;
     }
+    public void addProduct(Product product){
+        this.products.add(product);
+    }
 
     @Override
     public String toString() {
