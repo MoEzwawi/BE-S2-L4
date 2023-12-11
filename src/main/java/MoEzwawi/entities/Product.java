@@ -5,10 +5,10 @@ import java.util.Random;
 public class Product {
     private final long id;
     private String name;
-    private String category;
+    private Category category;
     private Double price;
 
-    public Product(String name, String category, Double price) {
+    public Product(String name, Category category, Double price) {
         this.name = name;
         this.category = category;
         this.price = price;
@@ -28,11 +28,11 @@ public class Product {
         this.name = name;
     }
 
-    public String getCategory() {
+    public Category getCategory() {
         return category;
     }
 
-    public void setCategory(String category) {
+    public void setCategory(Category category) {
         this.category = category;
     }
 
@@ -46,11 +46,11 @@ public class Product {
 
     @Override
     public String toString() {
-        return "Product{" +
+        return "Product: "+System.lineSeparator()+"{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", category='" + category + '\'' +
                 ", price=" + price +
-                '}';
+                '}'+System.lineSeparator();
     }
 }

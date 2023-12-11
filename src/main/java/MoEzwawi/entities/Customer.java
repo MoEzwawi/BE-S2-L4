@@ -36,9 +36,9 @@ public class Customer {
 
     @Override
     public String toString() {
-        return "Customer{" +
+        return "Customer: "+System.lineSeparator()+"{" +
                 "name='" + name + '\'' +
                 ", tier=" + tier +
-                '}';
+                '}'+System.lineSeparator();
     }
 }
